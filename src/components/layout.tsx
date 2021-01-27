@@ -9,11 +9,13 @@ import "./layout.css";
 
 import { graphql, useStaticQuery } from "gatsby";
 import PropTypes from "prop-types";
-import React from "react";
+import React, { PropsWithChildren } from "react";
 
 import Header from "./header";
 
-const Layout = ({ children }) => {
+interface Props {}
+
+const Layout = ({ children }: PropsWithChildren<Props>) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
