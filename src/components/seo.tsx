@@ -40,7 +40,7 @@ function SEO({ title, description = "", lang = "en", meta = [] }: Props) {
         lang
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={defaultTitle && `%s | ${defaultTitle}`}
       meta={[
         {
           name: `description`,
