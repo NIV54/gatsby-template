@@ -12,7 +12,7 @@ import React, { PropsWithChildren } from "react";
 
 interface Props {}
 
-const Layout = ({ children }: PropsWithChildren<Props>) => {
+export const Layout = ({ children }: PropsWithChildren<Props>) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -44,5 +44,3 @@ const Layout = ({ children }: PropsWithChildren<Props>) => {
     </div>
   );
 };
-
-export default Layout;
