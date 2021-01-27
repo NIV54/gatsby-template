@@ -1,3 +1,7 @@
+import React from "react";
+import { createGlobalStyle } from "styled-components/macro";
+
+export const LayoutGlobalStyle = createGlobalStyle`
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -595,3 +599,4 @@ pre tt:after {
     font-size: 100%;
   }
 }
+`;

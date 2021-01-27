@@ -5,25 +5,15 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import "./layout.css";
-
-import { graphql, useStaticQuery } from "gatsby";
 import React, { PropsWithChildren } from "react";
+
+import { LayoutGlobalStyle } from "./layout.styled";
 
 interface Props {}
 
-export const Layout = ({ children }: PropsWithChildren<Props>) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
-  return (
+export const Layout = ({ children }: PropsWithChildren<Props>) => (
+  <>
+    <LayoutGlobalStyle />
     <div
       style={{
         margin: `0 auto`,
@@ -42,5 +32,5 @@ export const Layout = ({ children }: PropsWithChildren<Props>) => {
         <a href="https://www.gatsbyjs.com">Gatsby</a>
       </footer>
     </div>
-  );
-};
+  </>
+);
