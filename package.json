@@ -1,7 +1,7 @@
 {
-  "name": "mekholim-web-app",
+  "name": "gatsby-template",
   "private": true,
-  "description": "Mekholim Web App",
+  "description": "Template for gatsby projects",
   "version": "1.0.0",
   "author": "Niv Zelber <niv.zelber@gmail.com>",
   "dependencies": {
@@ -9,8 +9,6 @@
     "@types/react": "^17.0.0",
     "@types/react-helmet": "^6.1.0",
     "@types/styled-components": "^5.1.7",
-    "@typescript-eslint/eslint-plugin": "^4.14.1",
-    "@typescript-eslint/parser": "^4.14.1",
     "babel-plugin-styled-components": "^1.12.0",
     "eslint": "^7.18.0",
     "gatsby": "^2.26.1",
@@ -28,10 +26,15 @@
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
     "prettier": "2.2.1"
   },
   "keywords": [
-    "mekholim"
+    "gatsby",
+    "template",
+    "bootstrapped project",
+    "frontend template"
   ],
   "license": "ISC",
   "scripts": {
